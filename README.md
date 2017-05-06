@@ -1,7 +1,8 @@
 Process Velodyne VLP-16 Data
 ======
 
-Written by nicolargh@github
+Written by nicolargh@github.com
+
 For complaints and bugs email nicola.seulin.gibson@gmail.com
 
 This is a matlab script designed to take the raw data from a Velodyne VLP-16 
@@ -12,7 +13,7 @@ The function requires the RPM of the LiDAR, a vector of the elapsed times and
 a vector of the raw data as a string. 
 
 Data for the function can be obtained by running a command such as:
-    tshark -f "host 192.168.1.201" -Tfields -e frame.number -e frame.time_relative -e data -i1 -c1000 > example_data.txt
+```tshark -f "host 192.168.1.201" -Tfields -e frame.number -e frame.time_relative -e data -i1 -c1000 > example_data.txt```
       
 192.168.1.201 is the default IP address of the LiDAR. For more information on 
 tshark, check out their website.
