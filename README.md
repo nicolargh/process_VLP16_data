@@ -13,6 +13,7 @@ The function requires the RPM of the LiDAR, a vector of the elapsed times and
 a vector of the raw data as a string. 
 
 Data for the function can be obtained by running a command such as:
+
 ```tshark -f "host 192.168.1.201" -Tfields -e frame.number -e frame.time_relative -e data -i1 -c1000 > example_data.txt```
       
 192.168.1.201 is the default IP address of the LiDAR. For more information on 
