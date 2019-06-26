@@ -5,8 +5,8 @@ function [scan, rev] = process_VLP16_data(rpm, times, data)
 
     % channel 0 has omega -15 degrees, etc, as specified in the data sheet
     % Each channel appears twice per data block so I doubled the array
-    omega = [-15, 1, -13, -3, -11, 5, -9, 7, -7, 9, -5, 11, -3, 13, -1, 15,...
-             -15, 1, -13, -3, -11, 5, -9, 7, -7, 9, -5, 11, -3, 13, -1, 15];
+    omega = [-15, 1, -13, 3, -11, 5, -9, 7, -7, 9, -5, 11, -3, 13, -1, 15,...
+             -15, 1, -13, 3, -11, 5, -9, 7, -7, 9, -5, 11, -3, 13, -1, 15];
 
     % calculate how much time it takes to do one revolution
     rps = (1/rpm)*60;
